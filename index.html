@@ -1,10 +1,19 @@
 <html>
 <head>
-  <title></title>
+  <title>КИШЕДИНГ</title>
+  <style>
+  .blink {
+    animation: blinker 400ms linear infinite;
+  }
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+  </style>
 </head>
 <body>
-  <h3>кишединг</h3>
-  <video id="composition" src="videos/composition.mp4"></video>
+  <center>
+  <video id="composition" src="videos/composition.mp4" controls style="display:none;"></video>
+  <img id="start" src="images/giphy.gif"/>
   <h3 id="love-song" style="display:none;">
     Когда в моей жизни появилась любовь, я вдруг заметил, как много есть песен, которые каким-то образом про меня.
   </h3>
@@ -14,13 +23,20 @@
 <p>Раз за разом веселей</p>
 <p>Мои зубы все белей</p>
   </div>
-  <div id="fasion" style="display:none;">
-    текст про моду
+  <div id="fasion" style="display:none;color:red;font-size:40px;" class="blink">
+    <h1>PERFECT FIT!</h1>
   </div>
 
-  <img src="images/giphy.gif"/>
-  <img src="images/teeth.jpg"/>
-  <img src="images/flowers.jpg"/>
+  <div id="guests" style="display:none;color:purple;font-size:20px;">
+    <h1><i>We are pleased to be your guests!</i></h1>
+  </div>
+  <div id="gift" style="display:none;font-size:30px;">
+    ☄️
+  </div>
+
+  <!--img src="images/teeth.jpg"/-->
+  <img id="flowers" src="images/flowers.jpg" style="display:none;">
+</center>
   <script src="scripts/dance.js"></script>
 </body>
 </html>
